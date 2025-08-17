@@ -3,32 +3,89 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>DeGoogle Mini Mobile Site</title>
+  <title>DeGoogle Guide</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <header>
-    <h1>DeGoogle</h1>
-    <p>Take control of your digital life</p>
+    <h1>DeGoogle Guide</h1>
+    <p class="subtitle">Take control of your digital life—one step at a time.</p>
   </header>
   <main>
-    <section>
-      <h2>Welcome</h2>
-      <p>This is a mini mobile site to help you de-Google your life. Explore privacy-friendly alternatives and tips!</p>
-      <button id="learnMoreBtn">Learn More</button>
+    <section class="intro">
+      <h2>Why DeGoogle?</h2>
+      <div class="cards">
+        <div class="card">
+          <h3>How Google Collects Data</h3>
+          <ul>
+            <li>Tracks searches, locations, and browsing habits</li>
+            <li>Scans emails and documents for keywords</li>
+            <li>Monitors app usage and device info</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>Value of Your Data</h3>
+          <button id="showValueBtn">Show Value</button>
+          <div id="dataValueBox" style="display:none;">
+            <p>Your data helps Google make <b>billions</b> from targeted ads. Each user is worth up to <b>$200/year</b> in ad revenue!</p>
+          </div>
+        </div>
+        <div class="card">
+          <h3>Why DeGoogle?</h3>
+          <ul>
+            <li>Regain privacy and control</li>
+            <li>Reduce digital profiling</li>
+            <li>Support open-source and ethical tech</li>
+          </ul>
+        </div>
+      </div>
     </section>
-    <section id="moreInfo" style="display:none;">
-      <h3>Why DeGoogle?</h3>
-      <ul>
-        <li>Protect your privacy</li>
-        <li>Reduce data tracking</li>
-        <li>Discover open-source tools</li>
-      </ul>
+    <section class="options">
+      <h2>Alternatives to Google Services</h2>
+      <div class="alt-grid">
+        <div>
+          <b>Search:</b> DuckDuckGo, Startpage, Brave Search
+        </div>
+        <div>
+          <b>Maps:</b> Organic Maps, OsmAnd
+        </div>
+        <div>
+          <b>Email:</b> ProtonMail, Tutanota
+        </div>
+        <div>
+          <b>Browser:</b> Firefox, Brave, Vivaldi
+        </div>
+        <div>
+          <b>Cloud:</b> Nextcloud, Proton Drive
+        </div>
+        <div>
+          <b>Android:</b> /e/OS, GrapheneOS
+        </div>
+      </div>
+    </section>
+    <section class="tips">
+      <h2>Quick Tips</h2>
+      <ul id="tipsList"></ul>
+    </section>
+    <section class="quiz-guide">
+      <h2>Test Your Knowledge</h2>
+      <button id="quizBtn">Take a Quick Quiz</button>
+      <div id="quizSection" style="display:none;">
+        <form id="quizForm">
+          <p>What is Google's main source of revenue?</p>
+          <label><input type="radio" name="quizQ1" value="a"> Cloud Services</label><br>
+          <label><input type="radio" name="quizQ1" value="b"> Advertising</label><br>
+          <label><input type="radio" name="quizQ1" value="c"> Hardware</label><br>
+          <button type="submit">Submit</button>
+        </form>
+        <div id="quizResult"></div>
+      </div>
     </section>
   </main>
   <footer>
-    <small>&copy; 2025 DeGoogle Project</small>
+    <small>&copy; 2025 DeGoogle Project | <a href="https://github.com/subhajit-mahanta/de-google" target="_blank">GitHub</a></small>
   </footer>
-  <script src="app.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>

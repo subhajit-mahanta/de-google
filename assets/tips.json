@@ -1,0 +1,26 @@
+[
+  {
+    "title": "Switch to Private Search Engines",
+    "tip": "Try DuckDuckGo, Startpage, or Brave Search for privacy-focused searching."
+  },
+  {
+    "title": "Use Open-Source Maps",
+    "tip": "OsmAnd and Organic Maps are great alternatives to Google Maps."
+  },
+  {
+    "title": "Self-Host Your Email",
+    "tip": "Consider ProtonMail or Tutanota for privacy-respecting email services."
+  },
+  {
+    "title": "Replace Chrome Browser",
+    "tip": "Browsers like Firefox, Brave, and Vivaldi offer more privacy controls."
+  },
+  {
+    "title": "Block Trackers",
+    "tip": "Use uBlock Origin or Privacy Badger to block trackers and ads."
+  },
+  {
+    "title": "Review App Permissions",
+    "tip": "Regularly check and limit app permissions on your devices."
+  }
+]
