@@ -1,143 +1,701 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>DeGoogle Guide</title>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Google+Sans+Rounded:wght@400;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
-  <style>
-    .visuals-row {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 1.5rem;
-      justify-content: center;
-      margin: 2rem 0 1rem 0;
-    }
-    .visual-card {
-      background: #fff;
-      border-radius: 18px;
-      box-shadow: 0 2px 12px rgba(0,0,0,0.08);
-      padding: 1.2rem 1.5rem;
-      min-width: 200px;
-      max-width: 270px;
-      flex: 1 1 220px;
-      text-align: center;
-      margin-bottom: 1rem;
-    }
-    .visual-card img {
-      width: 60px;
-      margin-bottom: 0.7em;
-    }
-    .info-block {
-      background: #e3f2fd;
-      color: #0d47a1;
-      border-radius: 12px;
-      padding: 1.2em 1.5em;
-      margin: 1.5em 0;
-      font-size: 1.1em;
-      font-weight: 500;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DeGoogle India - Privacy Education & Awareness</title>
+    <meta name="description" content="Educational resource to help Indians understand privacy risks of Google services and learn about secure alternatives">
+    
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+  
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header>
-    <h1 style="font-family: 'Google Sans Rounded', 'Roboto', Arial, sans-serif; font-weight:700; letter-spacing:0.01em;">DeGoogle Guide</h1>
-    <p class="subtitle">Take control of your digital life—one step at a time.</p>
-  </header>
-  <main>
-    <section class="intro">
-      <h2>Why DeGoogle?</h2>
-      <div class="visuals-row">
-        <div class="visual-card">
-          <img src="https://img.icons8.com/fluency/96/000000/fingerprint-scan.png" alt="Tracking Icon"/>
-          <h3>How Google Collects Data</h3>
-          <ul style="text-align:left;">
-            <li><b>Searches:</b> Every query is logged and linked to your profile.</li>
-            <li><b>Location:</b> Tracks your movements via Maps, Android, and even photos.</li>
-            <li><b>Emails & Docs:</b> Scans content for keywords and context.</li>
-            <li><b>Browsing:</b> Chrome, Analytics, and AdSense track your web activity.</li>
-            <li><b>Apps & Devices:</b> Knows which apps you use, for how long, and on which devices.</li>
-          </ul>
+  
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="branding">
+                    <h1 class="site-title">DeGoogle India</h1>
+                    <p class="site-tagline">Privacy Education & Digital Awareness</p>
+                </div>
+                <nav class="main-nav">
+                    <a href="#risks" class="nav-link">Privacy Risks</a>
+                    <a href="#alternatives" class="nav-link">Alternatives</a>
+                    <a href="#resources" class="nav-link">Resources</a>
+                </nav>
+            </div>
         </div>
-        <div class="visual-card">
-          <img src="https://img.icons8.com/fluency/96/000000/money-bag.png" alt="Value Icon"/>
-          <h3>Value & Cost of Your Data</h3>
-          <button id="showValueBtn">Show Value</button>
-          <div id="dataValueBox" style="display:none;">
-            <p>Your data helps Google make <b>billions</b> from targeted ads. Each user is worth up to <b>$200/year</b> in ad revenue!<br><br>
-            <b>But the real cost:</b> Personalized ads, higher prices, filter bubbles, and loss of privacy.</p>
-          </div>
+    </header>
+
+    
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1 class="hero-title">Understanding Your Digital Privacy in India</h1>
+                    <p class="hero-description">
+                        Educational resource to help you understand how your personal data is collected, 
+                        used, and monetized by big tech companies. Learn about privacy-respecting 
+                        alternatives that put your digital rights first.
+                    </p>
+                </div>
+                <div class="hero-visual">
+                    <div class="privacy-illustration">
+                        <div class="data-flow">
+                            <div class="user-icon">👤</div>
+                            <div class="arrow">→</div>
+                            <div class="google-icon">🔍</div>
+                            <div class="arrow">→</div>
+                            <div class="ads-icon">📊</div>
+                        </div>
+                        <p class="flow-description">Your Data → Collection → Targeted Ads</p>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="visual-card">
-          <img src="https://img.icons8.com/fluency/96/000000/lock-2.png" alt="Privacy Icon"/>
-          <h3>Why Should You Care?</h3>
-          <ul style="text-align:left;">
-            <li><b>Manipulation:</b> Data is used to influence your choices and opinions.</li>
-            <li><b>Security:</b> Data leaks and hacks can expose your private life.</li>
-            <li><b>Freedom:</b> Profiling can affect opportunities, prices, and even travel.</li>
-            <li><b>Ethics:</b> Support companies that respect your rights.</li>
-          </ul>
+    </section>
+
+    
+    <section id="risks" class="privacy-risks">
+        <div class="container">
+            <h2 class="section-title">Privacy Risks You Should Know</h2>
+            <p class="section-subtitle">
+                Understanding how your personal information is collected and used helps you make informed decisions about your digital life.
+            </p>
+            
+            <div class="risks-grid">
+                <div class="risk-card">
+                    <span class="risk-icon">📱</span>
+                    <h3>Location Tracking</h3>
+                    <p>Your movements are continuously tracked and stored, creating detailed profiles of your daily activities, work, and personal relationships.</p>
+                    <div class="fact-box">
+                        <strong>Did you know?</strong> Google stores location data even when "Location History" is turned off.
+                    </div>
+                </div>
+
+                <div class="risk-card">
+                    <span class="risk-icon">📧</span>
+                    <h3>Email Scanning</h3>
+                    <p>Your emails are automatically scanned for content, contacts, and behavioral patterns to build advertising profiles and improve AI systems.</p>
+                    <div class="fact-box">
+                        <strong>Fact:</strong> Gmail scans every email for ad targeting, even after claiming to stop in 2017.
+                    </div>
+                </div>
+
+                <div class="risk-card">
+                    <span class="risk-icon">🔍</span>
+                    <h3>Search Profiling</h3>
+                    <p>Every search query builds a detailed profile of your interests, health concerns, political views, and personal relationships.</p>
+                    <div class="fact-box">
+                        <strong>Reality:</strong> Google stores 20+ years of search history linked to your identity.
+                    </div>
+                </div>
+
+                <div class="risk-card">
+                    <span class="risk-icon">🎯</span>
+                    <h3>Behavioral Prediction</h3>
+                    <p>AI systems predict your future behavior, purchasing decisions, and life events to influence your choices through targeted content.</p>
+                    <div class="fact-box">
+                        <strong>Impact:</strong> Your data influences what information you see and decisions you make.
+                    </div>
+                </div>
+
+                <div class="risk-card">
+                    <span class="risk-icon">👥</span>
+                    <h3>Social Graph Mapping</h3>
+                    <p>Detailed maps of your relationships, contacts, and social connections are created and analyzed for various purposes.</p>
+                    <div class="fact-box">
+                        <strong>Scope:</strong> Google knows more about your relationships than you might realize.
+                    </div>
+                </div>
+
+                <div class="risk-card">
+                    <span class="risk-icon">💰</span>
+                    <h3>Data Monetization</h3>
+                    <p>Your personal information is the primary product being sold to advertisers, creating billions in revenue from your private life.</p>
+                    <div class="fact-box">
+                        <strong>Truth:</strong> If the service is free, your data is the product being sold.
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
-      <div class="info-block">
-        <b>Did you know?</b> Google services are free because your data is the real product. Every search, map, and email helps build a profile about you, which is used to target ads and influence what you see online.<br><br>
-        <b>For everyone:</b> DeGoogling doesn't mean giving up convenience! You can still enjoy modern tech—just with more privacy and choice. Start with small steps, like changing your search engine or browser.
-      </div>
     </section>
-    <section class="options">
-      <h2>Alternatives to Google Products</h2>
-      <div class="alt-grid">
-        <div><img src="https://img.icons8.com/color/48/duckduckgo.png" alt="DuckDuckGo" style="vertical-align:middle;"> <b>Search:</b> DuckDuckGo, Startpage, Brave Search<br><span class="alt-desc">No tracking, private results.</span></div>
-        <div><img src="https://img.icons8.com/color/48/map.png" alt="Maps" style="vertical-align:middle;"> <b>Maps:</b> Organic Maps, OsmAnd<br><span class="alt-desc">Offline, open-source, no location history.</span></div>
-        <div><img src="https://img.icons8.com/color/48/secured-letter.png" alt="Email" style="vertical-align:middle;"> <b>Email:</b> ProtonMail, Tutanota<br><span class="alt-desc">End-to-end encrypted, no ads.</span></div>
-        <div><img src="https://img.icons8.com/color/48/firefox.png" alt="Browser" style="vertical-align:middle;"> <b>Browser:</b> Firefox, Brave, Vivaldi<br><span class="alt-desc">Blocks trackers, open-source.</span></div>
-        <div><img src="https://img.icons8.com/color/48/cloud.png" alt="Cloud" style="vertical-align:middle;"> <b>Cloud:</b> Nextcloud, Proton Drive<br><span class="alt-desc">Private file storage, your data stays yours.</span></div>
-        <div><img src="https://img.icons8.com/color/48/android-os.png" alt="Android" style="vertical-align:middle;"> <b>Android:</b> /e/OS, GrapheneOS<br><span class="alt-desc">No Google Play, privacy by default.</span></div>
-        <div><img src="https://img.icons8.com/color/48/youtube-play.png" alt="Video" style="vertical-align:middle;"> <b>Video:</b> PeerTube, Vimeo<br><span class="alt-desc">No ads, no tracking, community-driven.</span></div>
-        <div><img src="https://img.icons8.com/color/48/document--v1.png" alt="Docs" style="vertical-align:middle;"> <b>Docs:</b> CryptPad, OnlyOffice<br><span class="alt-desc">Collaborate without surveillance.</span></div>
-        <div><img src="https://img.icons8.com/color/48/calendar--v1.png" alt="Calendar" style="vertical-align:middle;"> <b>Calendar:</b> Proton Calendar, Etar<br><span class="alt-desc">No data mining, open-source.</span></div>
-        <div><img src="https://img.icons8.com/color/48/picture.png" alt="Photos" style="vertical-align:middle;"> <b>Photos:</b> Immich, PhotoPrism<br><span class="alt-desc">Private photo storage, AI on your device.</span></div>
-      </div>
-      <div class="info-block" style="background:#fff3e0;color:#bf360c;">
-        <b>Tip:</b> Click on a product to see a quick guide!
-      </div>
-      <div id="productGuideModal" class="modal" style="display:none;position:fixed;top:0;left:0;width:100vw;height:100vh;background:rgba(0,0,0,0.4);z-index:1000;align-items:center;justify-content:center;">
-        <div style="background:#fff;border-radius:18px;max-width:350px;padding:2em 1.5em;box-shadow:0 4px 24px rgba(0,0,0,0.18);position:relative;">
-          <button id="closeModalBtn" style="position:absolute;top:0.7em;right:1em;background:none;border:none;font-size:1.5em;cursor:pointer;">&times;</button>
-          <div id="modalContent"></div>
+
+  
+    <section id="alternatives" class="alternatives">
+        <div class="container">
+            <h2 class="section-title">Privacy-Respecting Alternatives</h2>
+            <p class="section-subtitle">
+                Practical alternatives that protect your privacy while providing the same functionality you need for daily digital tasks.
+            </p>
+
+            <div class="alternatives-list">
+              
+                <div class="alternative-item">
+                    <div class="service-info">
+                        <div class="service-comparison-header">
+                            <div class="google-service">
+                                <div class="service-icon google-icon">
+                                    <svg width="48" height="48" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" fill="#4285f4"/>
+                                        <rect x="2" y="6" width="20" height="12" rx="2" fill="#EA4335"/>
+                                        <path d="M22 8L12 14L2 8" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </div>
+                                <div class="service-details">
+                                    <h4>Gmail</h4>
+                                    <p class="service-problems">❌ Privacy Issues</p>
+                                </div>
+                            </div>
+                            
+                            <div class="vs-arrow">
+                                <span>VS</span>
+                                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M9 18L15 12L9 6" stroke="#059669" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </div>
+                            
+                            <div class="alternative-service">
+                                <div class="service-icon alternative-icon">
+                                    <svg width="48" height="48" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <rect x="2" y="6" width="20" height="12" rx="2" stroke="#6366f1" stroke-width="2" fill="#f0f9ff"/>
+                                        <path d="M2 8L12 14L22 8" stroke="#6366f1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <circle cx="18" cy="10" r="2" fill="#6366f1"/>
+                                    </svg>
+                                </div>
+                                <div class="service-details">
+                                    <h3>ProtonMail</h3>
+                                    <p class="service-category">✅ Secure Email Service</p>
+                                    <div class="trust-indicators">
+                                        <span class="indicator">End-to-End Encrypted</span>
+                                        <span class="indicator">Swiss Privacy Laws</span>
+                                        <span class="indicator">Open Source</span>
+                                        <span class="indicator">No Data Mining</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="comparison">
+                            <div class="vs-section">
+                                <h4>❌ Gmail Privacy Issues</h4>
+                                <ul class="feature-list negative">
+                                    <li>Scans all email content</li>
+                                    <li>Builds advertising profiles</li>
+                                    <li>Shares data with third parties</li>
+                                    <li>No real encryption</li>
+                                    <li>Subject to mass surveillance</li>
+                                </ul>
+                            </div>
+                            <div class="vs-section">
+                                <h4>✅ ProtonMail Benefits</h4>
+                                <ul class="feature-list positive">
+                                    <li>Zero-access encryption</li>
+                                    <li>No data collection</li>
+                                    <li>Swiss privacy protection</li>
+                                    <li>Anonymous accounts possible</li>
+                                    <li>Transparent security audits</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="learn-more">
+                            <a href="https://protonmail.com" class="external-link" target="_blank" rel="noopener">
+                                Learn about ProtonMail →
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+         
+                <div class="alternative-item">
+                    <div class="service-info">
+                        <div class="service-comparison-header">
+                            <div class="google-service">
+                                <div class="service-icon google-icon">
+                                    <svg width="48" height="48" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4"/>
+                                        <path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/>
+                                        <path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z" fill="#FBBC05"/>
+                                        <path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"/>
+                                    </svg>
+                                </div>
+                                <div class="service-details">
+                                    <h4>Google Search</h4>
+                                    <p class="service-problems">❌ Tracks Everything</p>
+                                </div>
+                            </div>
+                            
+                            <div class="vs-arrow">
+                                <span>VS</span>
+                                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M9 18L15 12L9 6" stroke="#059669" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </div>
+                            
+                            <div class="alternative-service">
+                                <div class="service-icon alternative-icon">
+                                    <svg width="48" height="48" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <circle cx="12" cy="12" r="10" fill="#de5833"/>
+                                        <path d="M21 21L16.514 16.506M19 10.5C19 15.194 15.194 19 10.5 19C5.806 19 2 15.194 2 10.5C2 5.806 5.806 2 10.5 2C15.194 2 19 5.806 19 10.5Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </div>
+                                <div class="service-details">
+                                    <h3>DuckDuckGo</h3>
+                                    <p class="service-category">✅ Private Search Engine</p>
+                                    <div class="trust-indicators">
+                                        <span class="indicator">No Tracking</span>
+                                        <span class="indicator">No Personal Data Storage</span>
+                                        <span class="indicator">Tor Support</span>
+                                        <span class="indicator">Transparent Privacy</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="comparison">
+                            <div class="vs-section">
+                                <h4>❌ Google Search Issues</h4>
+                                <ul class="feature-list negative">
+                                    <li>Tracks every search query</li>
+                                    <li>Creates detailed user profiles</li>
+                                    <li>Personalizes results (filter bubble)</li>
+                                    <li>Stores search history forever</li>
+                                    <li>Integrates with ad network</li>
+                                </ul>
+                            </div>
+                            <div class="vs-section">
+                                <h4>✅ DuckDuckGo Benefits</h4>
+                                <ul class="feature-list positive">
+                                    <li>No search tracking</li>
+                                    <li>Same results for everyone</li>
+                                    <li>No personal data collection</li>
+                                    <li>Blocks hidden trackers</li>
+                                    <li>Instant answers feature</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="learn-more">
+                            <a href="https://duckduckgo.com" class="external-link" target="_blank" rel="noopener">
+                                Try DuckDuckGo Search →
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+       
+                <div class="alternative-item">
+                    <div class="service-info">
+                        <div class="service-comparison-header">
+                            <div class="google-service">
+                                <div class="service-icon google-icon">
+                                    <svg width="48" height="48" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <circle cx="12" cy="12" r="10" fill="#4285F4"/>
+                                        <circle cx="12" cy="12" r="7" fill="white"/>
+                                        <circle cx="12" cy="12" r="4" fill="#4285F4"/>
+                                        <path d="M12 2C17.52 2 22 6.48 22 12C22 17.52 17.52 22 12 22C6.48 22 2 17.52 2 12C2 6.48 6.48 2 12 2Z" stroke="#EA4335" stroke-width="1" fill="none"/>
+                                        <path d="M12 6C15.31 6 18 8.69 18 12C18 15.31 15.31 18 12 18C8.69 18 6 15.31 6 12C6 8.69 8.69 6 12 6Z" stroke="#FBBC05" stroke-width="1" fill="none"/>
+                                        <path d="M12 10C13.1 10 14 10.9 14 12C14 13.1 13.1 14 12 14C10.9 14 10 13.1 10 12C10 10.9 10.9 10 12 10Z" fill="#34A853"/>
+                                    </svg>
+                                </div>
+                                <div class="service-details">
+                                    <h4>Chrome Browser</h4>
+                                    <p class="service-problems">❌ Extensive Tracking</p>
+                                </div>
+                            </div>
+                            
+                            <div class="vs-arrow">
+                                <span>VS</span>
+                                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M9 18L15 12L9 6" stroke="#059669" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </div>
+                            
+                            <div class="alternative-service">
+                                <div class="service-icon alternative-icon">
+                                    <svg width="48" height="48" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <circle cx="12" cy="12" r="10" fill="#ff7139"/>
+                                        <path d="M12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2ZM12 20C7.59 20 4 16.41 4 12C4 7.59 7.59 4 12 4C16.41 4 20 7.59 20 12C20 16.41 16.41 20 12 20Z" fill="white"/>
+                                        <path d="M16 12C16 14.21 14.21 16 12 16C9.79 16 8 14.21 8 12C8 9.79 9.79 8 12 8C14.21 8 16 9.79 16 12Z" fill="#ff7139"/>
+                                    </svg>
+                                </div>
+                                <div class="service-details">
+                                    <h3>Firefox</h3>
+                                    <p class="service-category">✅ Privacy-Focused Browser</p>
+                                    <div class="trust-indicators">
+                                        <span class="indicator">Open Source</span>
+                                        <span class="indicator">Enhanced Tracking Protection</span>
+                                        <span class="indicator">No Data Collection</span>
+                                        <span class="indicator">Mozilla Foundation</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="comparison">
+                            <div class="vs-section">
+                                <h4>❌ Chrome Privacy Issues</h4>
+                                <ul class="feature-list negative">
+                                    <li>Extensive user tracking</li>
+                                    <li>Syncs data to Google servers</li>
+                                    <li>Integrates with Google services</li>
+                                    <li>Closed source components</li>
+                                    <li>FLoC and Topics API tracking</li>
+                                </ul>
+                            </div>
+                            <div class="vs-section">
+                                <h4>✅ Firefox Benefits</h4>
+                                <ul class="feature-list positive">
+                                    <li>Blocks trackers by default</li>
+                                    <li>Independent organization</li>
+                                    <li>Customizable privacy settings</li>
+                                    <li>No profit from user data</li>
+                                    <li>Strong security features</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="learn-more">
+                            <a href="https://firefox.com" class="external-link" target="_blank" rel="noopener">
+                                Download Firefox →
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+               
+                <div class="alternative-item">
+                    <div class="service-info">
+                        <div class="service-comparison-header">
+                            <div class="google-service">
+                                <div class="service-icon google-icon">
+                                    <svg width="48" height="48" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M12.01 2C6.5 2 2.01 6.5 2.01 12C2.01 17.5 6.5 22 12.01 22C17.51 22 22.01 17.5 22.01 12C22.01 6.5 17.51 2 12.01 2Z" fill="#4285F4"/>
+                                        <path d="M6.5 10.5L9.5 13.5L17.5 5.5" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M19.35 10.04C18.67 6.59 15.64 4 12.01 4C9.11 4 6.6 5.64 5.35 8.04C2.34 8.36 0 10.91 0 14C0 17.31 2.69 20 6 20H19C21.76 20 24 17.76 24 15C24 12.36 21.95 10.22 19.35 10.04Z" fill="#0F9D58"/>
+                                    </svg>
+                                </div>
+                                <div class="service-details">
+                                    <h4>Google Drive</h4>
+                                    <p class="service-problems">❌ Scans All Files</p>
+                                </div>
+                            </div>
+                            
+                            <div class="vs-arrow">
+                                <span>VS</span>
+                                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M9 18L15 12L9 6" stroke="#059669" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </div>
+                            
+                            <div class="alternative-service">
+                                <div class="service-icon alternative-icon">
+                                    <svg width="48" height="48" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <rect x="3" y="4" width="18" height="14" rx="2" fill="#0082c9" stroke="#0082c9" stroke-width="2"/>
+                                        <path d="M7 10L12 13L17 10" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <circle cx="18" cy="6" r="2" fill="white"/>
+                                        <path d="M12 20V18M8 20V18M16 20V18" stroke="#0082c9" stroke-width="2" stroke-linecap="round"/>
+                                    </svg>
+                                </div>
+                                <div class="service-details">
+                                    <h3>Nextcloud</h3>
+                                    <p class="service-category">✅ Self-Hosted Cloud Storage</p>
+                                    <div class="trust-indicators">
+                                        <span class="indicator">Self-Hosted</span>
+                                        <span class="indicator">End-to-End Encryption</span>
+                                        <span class="indicator">Open Source</span>
+                                        <span class="indicator">Full Control</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="comparison">
+                            <div class="vs-section">
+                                <h4>❌ Google Drive Issues</h4>
+                                <ul class="feature-list negative">
+                                    <li>Scans all uploaded files</li>
+                                    <li>Can disable access anytime</li>
+                                    <li>Integrates with ad targeting</li>
+                                    <li>Subject to surveillance</li>
+                                    <li>Terms can change anytime</li>
+                                </ul>
+                            </div>
+                            <div class="vs-section">
+                                <h4>✅ Nextcloud Benefits</h4>
+                                <ul class="feature-list positive">
+                                    <li>You own your data</li>
+                                    <li>Choose your own server location</li>
+                                    <li>No file scanning</li>
+                                    <li>Unlimited storage (your hardware)</li>
+                                    <li>Works with any device</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="learn-more">
+                            <a href="https://nextcloud.com" class="external-link" target="_blank" rel="noopener">
+                                Learn about Nextcloud →
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+             
+                <div class="alternative-item">
+                    <div class="service-info">
+                        <div class="service-comparison-header">
+                            <div class="google-service">
+                                <div class="service-icon google-icon">
+                                    <svg width="48" height="48" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M12 2C8.13 2 5 5.13 5 9C5 14.25 12 22 12 22S19 14.25 19 9C19 5.13 15.87 2 12 2Z" fill="#4285F4"/>
+                                        <circle cx="12" cy="9" r="2.5" fill="white"/>
+                                        <path d="M12 7C10.9 7 10 7.9 10 9S10.9 11 12 11S14 10.1 14 9S13.1 7 12 7Z" fill="#EA4335"/>
+                                    </svg>
+                                </div>
+                                <div class="service-details">
+                                    <h4>Google Maps</h4>
+                                    <p class="service-problems">❌ Tracks Location</p>
+                                </div>
+                            </div>
+                            
+                            <div class="vs-arrow">
+                                <span>VS</span>
+                                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M9 18L15 12L9 6" stroke="#059669" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </div>
+                            
+                            <div class="alternative-service">
+                                <div class="service-icon alternative-icon">
+                                    <svg width="48" height="48" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M12 2C8.13 2 5 5.13 5 9C5 14.25 12 22 12 22S19 14.25 19 9C19 5.13 15.87 2 12 2Z" fill="#7C3AED"/>
+                                        <circle cx="12" cy="9" r="2.5" fill="white"/>
+                                        <path d="M3 3L21 21M9 9L15 15" stroke="#7C3AED" stroke-width="1.5" stroke-linecap="round"/>
+                                    </svg>
+                                </div>
+                                <div class="service-details">
+                                    <h3>OpenStreetMap</h3>
+                                    <p class="service-category">✅ Community-Driven Maps</p>
+                                    <div class="trust-indicators">
+                                        <span class="indicator">No Tracking</span>
+                                        <span class="indicator">Open Data</span>
+                                        <span class="indicator">Community Built</span>
+                                        <span class="indicator">Privacy Focused</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="comparison">
+                            <div class="vs-section">
+                                <h4>❌ Google Maps Issues</h4>
+                                <ul class="feature-list negative">
+                                    <li>Tracks your location constantly</li>
+                                    <li>Stores travel history</li>
+                                    <li>Creates behavior profiles</li>
+                                    <li>Shares data with advertisers</li>
+                                    <li>Predicts your destinations</li>
+                                </ul>
+                            </div>
+                            <div class="vs-section">
+                                <h4>✅ OpenStreetMap Benefits</h4>
+                                <ul class="feature-list positive">
+                                    <li>No user tracking</li>
+                                    <li>Community-maintained data</li>
+                                    <li>Works with privacy apps</li>
+                                    <li>Open source and transparent</li>
+                                    <li>No commercial interests</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="learn-more">
+                            <a href="https://openstreetmap.org" class="external-link" target="_blank" rel="noopener">
+                                Explore OpenStreetMap →
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+             
+                <div class="alternative-item">
+                    <div class="service-info">
+                        <div class="service-comparison-header">
+                            <div class="google-service">
+                                <div class="service-icon google-icon">
+                                    <svg width="48" height="48" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <rect x="2" y="3" width="20" height="14" rx="2" fill="#FF0000"/>
+                                        <polygon points="10,8 16,12 10,16" fill="white"/>
+                                        <path d="M2 19H22" stroke="#FF0000" stroke-width="2" stroke-linecap="round"/>
+                                    </svg>
+                                </div>
+                                <div class="service-details">
+                                    <h4>YouTube</h4>
+                                    <p class="service-problems">❌ Heavy Surveillance</p>
+                                </div>
+                            </div>
+                            
+                            <div class="vs-arrow">
+                                <span>VS</span>
+                                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M9 18L15 12L9 6" stroke="#059669" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </div>
+                            
+                            <div class="alternative-service">
+                                <div class="service-icon alternative-icon">
+                                    <svg width="48" height="48" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <rect x="2" y="3" width="20" height="14" rx="2" fill="#F1F1F1" stroke="#333" stroke-width="2"/>
+                                        <polygon points="10,8 16,12 10,16" fill="#333"/>
+                                        <circle cx="6" cy="20" r="1" fill="#333"/>
+                                        <circle cx="12" cy="20" r="1" fill="#333"/>
+                                        <circle cx="18" cy="20" r="1" fill="#333"/>
+                                    </svg>
+                                </div>
+                                <div class="service-details">
+                                    <h3>PeerTube / Odysee</h3>
+                                    <p class="service-category">✅ Decentralized Video Platforms</p>
+                                    <div class="trust-indicators">
+                                        <span class="indicator">Decentralized</span>
+                                        <span class="indicator">No Algorithmic Manipulation</span>
+                                        <span class="indicator">Ad-Free Options</span>
+                                        <span class="indicator">Creator Freedom</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="comparison">
+                            <div class="vs-section">
+                                <h4>❌ YouTube Issues</h4>
+                                <ul class="feature-list negative">
+                                    <li>Tracks viewing behavior</li>
+                                    <li>Algorithmic content manipulation</li>
+                                    <li>Heavy advertising surveillance</li>
+                                    <li>Censorship and demonetization</li>
+                                    <li>Data shared with Google network</li>
+                                </ul>
+                            </div>
+                            <div class="vs-section">
+                                <h4>✅ Alternative Benefits</h4>
+                                <ul class="feature-list positive">
+                                    <li>No user profiling</li>
+                                    <li>Federated/decentralized</li>
+                                    <li>No algorithmic manipulation</li>
+                                    <li>Creator ownership</li>
+                                    <li>Multiple platform choices</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="learn-more">
+                            <a href="https://joinpeertube.org" class="external-link" target="_blank" rel="noopener">
+                                Learn about PeerTube →
+                            </a>
+                            <span style="margin: 0 1rem;">•</span>
+                            <a href="https://odysee.com" class="external-link" target="_blank" rel="noopener">
+                                Try Odysee →
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
     </section>
-    <section class="tips">
-      <h2>Quick Tips</h2>
-      <ul id="tipsList"></ul>
-      <div class="info-block" style="background:#e8f5e9;color:#1b5e20;">
-        <b>For everyone:</b> Privacy is a journey, not a destination. Even small changes help!
-      </div>
-      <div style="margin-top:1.5em;">
-        <button id="randomTipBtn" style="background:#1976d2;color:#fff;border:none;border-radius:18px;padding:0.6em 1.3em;font-size:1em;cursor:pointer;font-family:'Google Sans Rounded','Roboto',Arial,sans-serif;font-weight:700;box-shadow:0 2px 8px rgba(25,118,210,0.08);transition:background 0.2s,box-shadow 0.2s;">Show Random Tip</button>
-        <div id="randomTipBox" style="margin-top:1em;font-size:1.1em;font-weight:500;"></div>
-      </div>
+
+
+    <section id="resources" class="resources">
+        <div class="container">
+            <h2 class="section-title">Educational Resources</h2>
+            <p class="section-subtitle">
+                Learn more about digital privacy, security, and your rights in the digital age.
+            </p>
+
+            <div class="resources-grid">
+                <div class="resource-card">
+                    <h3>Privacy Guides</h3>
+                    <p>Comprehensive guides on protecting your privacy online, written by security experts and privacy advocates.</p>
+                    <a href="https://privacyguides.org" class="resource-link" target="_blank" rel="noopener">Visit Privacy Guides →</a>
+                </div>
+
+                <div class="resource-card">
+                    <h3>Electronic Frontier Foundation</h3>
+                    <p>Leading nonprofit defending digital privacy, free speech, and innovation. Essential reading for digital rights.</p>
+                    <a href="https://eff.org" class="resource-link" target="_blank" rel="noopener">Visit EFF →</a>
+                </div>
+
+                <div class="resource-card">
+                    <h3>That One Privacy Site</h3>
+                    <p>Detailed comparisons of VPN services, email providers, and other privacy tools with transparent methodology.</p>
+                    <a href="https://thatoneprivacysite.net" class="resource-link" target="_blank" rel="noopener">Visit TOPS →</a>
+                </div>
+
+                <div class="resource-card">
+                    <h3>Surveillance Self-Defense</h3>
+                    <p>EFF's guide to defending yourself and your friends from surveillance by using secure technology and developing careful practices.</p>
+                    <a href="https://ssd.eff.org" class="resource-link" target="_blank" rel="noopener">Read SSD Guide →</a>
+                </div>
+
+                <div class="resource-card">
+                    <h3>Restore Privacy</h3>
+                    <p>Independent research and testing of privacy tools, with detailed reviews and recommendations for all skill levels.</p>
+                    <a href="https://restoreprivacy.com" class="resource-link" target="_blank" rel="noopener">Visit Restore Privacy →</a>
+                </div>
+
+                <div class="resource-card">
+                    <h3>Indian Digital Rights</h3>
+                    <p>Learn about digital rights, data protection laws, and privacy advocacy specifically in the Indian context.</p>
+                    <a href="https://internetfreedom.in" class="resource-link" target="_blank" rel="noopener">Visit IFF →</a>
+                </div>
+            </div>
+        </div>
     </section>
-    <section class="quiz-guide">
-      <h2>Test Your Knowledge</h2>
-      <button id="quizBtn">Take a Quick Quiz</button>
-      <div id="quizSection" style="display:none;">
-        <form id="quizForm">
-          <p>What is Google's main source of revenue?</p>
-          <label><input type="radio" name="quizQ1" value="a"> Cloud Services</label><br>
-          <label><input type="radio" name="quizQ1" value="b"> Advertising</label><br>
-          <label><input type="radio" name="quizQ1" value="c"> Hardware</label><br>
-          <button type="submit">Submit</button>
-        </form>
-        <div id="quizResult"></div>
-      </div>
-    </section>
-  </main>
-  <footer>
-    <small>&copy; 2025 DeGoogle Project | <a href="https://github.com/subhajit-mahanta/de-google" target="_blank">GitHub</a></small>
-  </footer>
-  <script src="script.js"></script>
+
+  
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-info">
+                    <h3>DeGoogle India</h3>
+                    <p>
+                        This website is an educational resource to help people understand digital privacy 
+                        and make informed decisions about their online activities. We believe privacy is 
+                        a fundamental right, not a privilege.
+                    </p>
+                    <p class="disclaimer">
+                        This is an independent educational project. We are not affiliated with any of the 
+                        services mentioned, nor do we receive compensation for recommendations.
+                    </p>
+                </div>
+                <div class="footer-links">
+                    <div class="link-group">
+                        <h4>Privacy Tools</h4>
+                        <a href="https://privacyguides.org">Privacy Guides</a>
+                        <a href="https://alternativeto.net">AlternativeTo</a>
+                        <a href="https://ethical.net">Ethical.net</a>
+                    </div>
+                    <div class="link-group">
+                        <h4>Learn More</h4>
+                        <a href="https://eff.org">Digital Rights</a>
+                        <a href="https://ssd.eff.org">Security Guide</a>
+                        <a href="https://internetfreedom.in">Indian Context</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 DeGoogle India. Educational content released under Creative Commons. Made for digital awareness, not profit.</p>
+            </div>
+        </div>
+    </footer>
+
+  
+    <script src="script.js"></script>
 </body>
 </html>
