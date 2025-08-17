@@ -4,69 +4,121 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>DeGoogle Guide</title>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Google+Sans+Rounded:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
+  <style>
+    .visuals-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1.5rem;
+      justify-content: center;
+      margin: 2rem 0 1rem 0;
+    }
+    .visual-card {
+      background: #fff;
+      border-radius: 18px;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+      padding: 1.2rem 1.5rem;
+      min-width: 200px;
+      max-width: 270px;
+      flex: 1 1 220px;
+      text-align: center;
+      margin-bottom: 1rem;
+    }
+    .visual-card img {
+      width: 60px;
+      margin-bottom: 0.7em;
+    }
+    .info-block {
+      background: #e3f2fd;
+      color: #0d47a1;
+      border-radius: 12px;
+      padding: 1.2em 1.5em;
+      margin: 1.5em 0;
+      font-size: 1.1em;
+      font-weight: 500;
+    }
+  </style>
 </head>
 <body>
   <header>
-    <h1>DeGoogle Guide</h1>
+    <h1 style="font-family: 'Google Sans Rounded', 'Roboto', Arial, sans-serif; font-weight:700; letter-spacing:0.01em;">DeGoogle Guide</h1>
     <p class="subtitle">Take control of your digital life—one step at a time.</p>
   </header>
   <main>
     <section class="intro">
       <h2>Why DeGoogle?</h2>
-      <div class="cards">
-        <div class="card">
+      <div class="visuals-row">
+        <div class="visual-card">
+          <img src="https://img.icons8.com/fluency/96/000000/fingerprint-scan.png" alt="Tracking Icon"/>
           <h3>How Google Collects Data</h3>
-          <ul>
-            <li>Tracks searches, locations, and browsing habits</li>
-            <li>Scans emails and documents for keywords</li>
-            <li>Monitors app usage and device info</li>
+          <ul style="text-align:left;">
+            <li><b>Searches:</b> Every query is logged and linked to your profile.</li>
+            <li><b>Location:</b> Tracks your movements via Maps, Android, and even photos.</li>
+            <li><b>Emails & Docs:</b> Scans content for keywords and context.</li>
+            <li><b>Browsing:</b> Chrome, Analytics, and AdSense track your web activity.</li>
+            <li><b>Apps & Devices:</b> Knows which apps you use, for how long, and on which devices.</li>
           </ul>
         </div>
-        <div class="card">
-          <h3>Value of Your Data</h3>
+        <div class="visual-card">
+          <img src="https://img.icons8.com/fluency/96/000000/money-bag.png" alt="Value Icon"/>
+          <h3>Value & Cost of Your Data</h3>
           <button id="showValueBtn">Show Value</button>
           <div id="dataValueBox" style="display:none;">
-            <p>Your data helps Google make <b>billions</b> from targeted ads. Each user is worth up to <b>$200/year</b> in ad revenue!</p>
+            <p>Your data helps Google make <b>billions</b> from targeted ads. Each user is worth up to <b>$200/year</b> in ad revenue!<br><br>
+            <b>But the real cost:</b> Personalized ads, higher prices, filter bubbles, and loss of privacy.</p>
           </div>
         </div>
-        <div class="card">
-          <h3>Why DeGoogle?</h3>
-          <ul>
-            <li>Regain privacy and control</li>
-            <li>Reduce digital profiling</li>
-            <li>Support open-source and ethical tech</li>
+        <div class="visual-card">
+          <img src="https://img.icons8.com/fluency/96/000000/lock-2.png" alt="Privacy Icon"/>
+          <h3>Why Should You Care?</h3>
+          <ul style="text-align:left;">
+            <li><b>Manipulation:</b> Data is used to influence your choices and opinions.</li>
+            <li><b>Security:</b> Data leaks and hacks can expose your private life.</li>
+            <li><b>Freedom:</b> Profiling can affect opportunities, prices, and even travel.</li>
+            <li><b>Ethics:</b> Support companies that respect your rights.</li>
           </ul>
         </div>
       </div>
+      <div class="info-block">
+        <b>Did you know?</b> Google services are free because your data is the real product. Every search, map, and email helps build a profile about you, which is used to target ads and influence what you see online.<br><br>
+        <b>For everyone:</b> DeGoogling doesn't mean giving up convenience! You can still enjoy modern tech—just with more privacy and choice. Start with small steps, like changing your search engine or browser.
+      </div>
     </section>
     <section class="options">
-      <h2>Alternatives to Google Services</h2>
+      <h2>Alternatives to Google Products</h2>
       <div class="alt-grid">
-        <div>
-          <b>Search:</b> DuckDuckGo, Startpage, Brave Search
-        </div>
-        <div>
-          <b>Maps:</b> Organic Maps, OsmAnd
-        </div>
-        <div>
-          <b>Email:</b> ProtonMail, Tutanota
-        </div>
-        <div>
-          <b>Browser:</b> Firefox, Brave, Vivaldi
-        </div>
-        <div>
-          <b>Cloud:</b> Nextcloud, Proton Drive
-        </div>
-        <div>
-          <b>Android:</b> /e/OS, GrapheneOS
+        <div><img src="https://img.icons8.com/color/48/duckduckgo.png" alt="DuckDuckGo" style="vertical-align:middle;"> <b>Search:</b> DuckDuckGo, Startpage, Brave Search<br><span class="alt-desc">No tracking, private results.</span></div>
+        <div><img src="https://img.icons8.com/color/48/map.png" alt="Maps" style="vertical-align:middle;"> <b>Maps:</b> Organic Maps, OsmAnd<br><span class="alt-desc">Offline, open-source, no location history.</span></div>
+        <div><img src="https://img.icons8.com/color/48/secured-letter.png" alt="Email" style="vertical-align:middle;"> <b>Email:</b> ProtonMail, Tutanota<br><span class="alt-desc">End-to-end encrypted, no ads.</span></div>
+        <div><img src="https://img.icons8.com/color/48/firefox.png" alt="Browser" style="vertical-align:middle;"> <b>Browser:</b> Firefox, Brave, Vivaldi<br><span class="alt-desc">Blocks trackers, open-source.</span></div>
+        <div><img src="https://img.icons8.com/color/48/cloud.png" alt="Cloud" style="vertical-align:middle;"> <b>Cloud:</b> Nextcloud, Proton Drive<br><span class="alt-desc">Private file storage, your data stays yours.</span></div>
+        <div><img src="https://img.icons8.com/color/48/android-os.png" alt="Android" style="vertical-align:middle;"> <b>Android:</b> /e/OS, GrapheneOS<br><span class="alt-desc">No Google Play, privacy by default.</span></div>
+        <div><img src="https://img.icons8.com/color/48/youtube-play.png" alt="Video" style="vertical-align:middle;"> <b>Video:</b> PeerTube, Vimeo<br><span class="alt-desc">No ads, no tracking, community-driven.</span></div>
+        <div><img src="https://img.icons8.com/color/48/document--v1.png" alt="Docs" style="vertical-align:middle;"> <b>Docs:</b> CryptPad, OnlyOffice<br><span class="alt-desc">Collaborate without surveillance.</span></div>
+        <div><img src="https://img.icons8.com/color/48/calendar--v1.png" alt="Calendar" style="vertical-align:middle;"> <b>Calendar:</b> Proton Calendar, Etar<br><span class="alt-desc">No data mining, open-source.</span></div>
+        <div><img src="https://img.icons8.com/color/48/picture.png" alt="Photos" style="vertical-align:middle;"> <b>Photos:</b> Immich, PhotoPrism<br><span class="alt-desc">Private photo storage, AI on your device.</span></div>
+      </div>
+      <div class="info-block" style="background:#fff3e0;color:#bf360c;">
+        <b>Tip:</b> Click on a product to see a quick guide!
+      </div>
+      <div id="productGuideModal" class="modal" style="display:none;position:fixed;top:0;left:0;width:100vw;height:100vh;background:rgba(0,0,0,0.4);z-index:1000;align-items:center;justify-content:center;">
+        <div style="background:#fff;border-radius:18px;max-width:350px;padding:2em 1.5em;box-shadow:0 4px 24px rgba(0,0,0,0.18);position:relative;">
+          <button id="closeModalBtn" style="position:absolute;top:0.7em;right:1em;background:none;border:none;font-size:1.5em;cursor:pointer;">&times;</button>
+          <div id="modalContent"></div>
         </div>
       </div>
     </section>
     <section class="tips">
       <h2>Quick Tips</h2>
       <ul id="tipsList"></ul>
+      <div class="info-block" style="background:#e8f5e9;color:#1b5e20;">
+        <b>For everyone:</b> Privacy is a journey, not a destination. Even small changes help!
+      </div>
+      <div style="margin-top:1.5em;">
+        <button id="randomTipBtn" style="background:#1976d2;color:#fff;border:none;border-radius:18px;padding:0.6em 1.3em;font-size:1em;cursor:pointer;font-family:'Google Sans Rounded','Roboto',Arial,sans-serif;font-weight:700;box-shadow:0 2px 8px rgba(25,118,210,0.08);transition:background 0.2s,box-shadow 0.2s;">Show Random Tip</button>
+        <div id="randomTipBox" style="margin-top:1em;font-size:1.1em;font-weight:500;"></div>
+      </div>
     </section>
     <section class="quiz-guide">
       <h2>Test Your Knowledge</h2>

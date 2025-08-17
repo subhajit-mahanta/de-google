@@ -1,60 +1,59 @@
 body {
   margin: 0;
-  font-family: 'Roboto', Arial, sans-serif;
-  background: #f7f7f7;
-  color: #222;
+  font-family: 'Google Sans Rounded', 'Roboto', Arial, sans-serif;
+  background: linear-gradient(135deg, #f7f7f7 60%, #e3f2fd 100%);
+  color: #23272f;
+  min-height: 100vh;
 }
 header {
-  background: #222;
+  background: linear-gradient(90deg, #1976d2 60%, #43a047 100%);
   color: #fff;
-  padding: 2rem 1rem 1.2rem 1rem;
+  padding: 2.2rem 1rem 1.2rem 1rem;
   text-align: center;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+  box-shadow: 0 4px 16px rgba(25, 118, 210, 0.08);
 }
 .subtitle {
   color: #b3e5fc;
   font-size: 1.1em;
   margin-top: 0.5em;
+  font-family: 'Google Sans Rounded', 'Roboto', Arial, sans-serif;
 }
 main {
   padding: 1.2rem 0.5rem 2rem 0.5rem;
-  max-width: 700px;
+  max-width: 800px;
   margin: auto;
 }
-.cards {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1rem;
-  justify-content: center;
-}
-.card {
-  background: #fff;
-  border-radius: 12px;
-  box-shadow: 0 2px 10px rgba(0,0,0,0.06);
-  padding: 1rem 1.2rem;
-  min-width: 220px;
-  flex: 1 1 220px;
-  margin-bottom: 1rem;
+#tipsList, .visuals-row {
+  font-family: 'Google Sans Rounded', 'Roboto', Arial, sans-serif;
 }
 #showValueBtn {
-  background: #43a047;
+  background: linear-gradient(90deg, #43a047 60%, #1976d2 100%);
   color: #fff;
   border: none;
-  border-radius: 5px;
-  padding: 0.5em 1em;
+  border-radius: 18px;
+  padding: 0.6em 1.3em;
   font-size: 1em;
   cursor: pointer;
   margin-top: 0.7em;
+  font-family: 'Google Sans Rounded', 'Roboto', Arial, sans-serif;
+  font-weight: 700;
+  box-shadow: 0 2px 8px rgba(67,160,71,0.08);
+  transition: background 0.2s, box-shadow 0.2s;
 }
 #showValueBtn:hover {
-  background: #2e7031;
+  background: linear-gradient(90deg, #1976d2 60%, #43a047 100%);
+  box-shadow: 0 4px 16px rgba(25,118,210,0.12);
 }
 #dataValueBox {
   background: #e3f2fd;
   color: #1565c0;
-  border-radius: 7px;
-  padding: 0.7em 1em;
+  border-radius: 12px;
+  padding: 0.9em 1.2em;
   margin-top: 0.7em;
   font-weight: 500;
+  font-family: 'Google Sans Rounded', 'Roboto', Arial, sans-serif;
 }
 .options {
   margin-top: 2rem;
@@ -64,10 +63,11 @@ main {
   grid-template-columns: 1fr 1fr;
   gap: 0.7rem;
   background: #fff;
-  border-radius: 10px;
-  padding: 1rem;
+  border-radius: 16px;
+  padding: 1.2rem;
   margin-bottom: 1.5rem;
   box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+  font-family: 'Google Sans Rounded', 'Roboto', Arial, sans-serif;
 }
 .tips {
   margin-bottom: 2rem;
@@ -79,53 +79,105 @@ main {
 #tipsList li {
   background: #e8f5e9;
   margin-bottom: 0.5em;
-  padding: 0.7em 1em;
-  border-radius: 7px;
+  padding: 0.9em 1.2em;
+  border-radius: 14px;
   font-size: 1em;
   transition: background 0.2s;
+  font-family: 'Google Sans Rounded', 'Roboto', Arial, sans-serif;
+  box-shadow: 0 1px 4px rgba(76,175,80,0.06);
 }
 #tipsList li:hover {
   background: #c8e6c9;
 }
 .quiz-guide {
   background: #fffde7;
-  border-radius: 10px;
-  padding: 1rem;
+  border-radius: 16px;
+  padding: 1.2rem;
   box-shadow: 0 2px 8px rgba(0,0,0,0.04);
   margin-bottom: 2rem;
+  font-family: 'Google Sans Rounded', 'Roboto', Arial, sans-serif;
 }
 #quizBtn {
-  background: #1976d2;
+  background: linear-gradient(90deg, #1976d2 60%, #43a047 100%);
   color: #fff;
   border: none;
-  border-radius: 5px;
-  padding: 0.5em 1em;
+  border-radius: 18px;
+  padding: 0.6em 1.3em;
   font-size: 1em;
   cursor: pointer;
   margin-bottom: 1em;
+  font-family: 'Google Sans Rounded', 'Roboto', Arial, sans-serif;
+  font-weight: 700;
+  box-shadow: 0 2px 8px rgba(25,118,210,0.08);
+  transition: background 0.2s, box-shadow 0.2s;
 }
 #quizBtn:hover {
-  background: #0d47a1;
+  background: linear-gradient(90deg, #43a047 60%, #1976d2 100%);
+  box-shadow: 0 4px 16px rgba(67,160,71,0.12);
 }
 #quizResult {
   margin-top: 1em;
   font-weight: bold;
+  font-family: 'Google Sans Rounded', 'Roboto', Arial, sans-serif;
 }
 footer {
   text-align: center;
   padding: 1.5em 0 0.7em 0;
   color: #888;
   font-size: 0.95em;
+  font-family: 'Google Sans Rounded', 'Roboto', Arial, sans-serif;
 }
 @media (max-width: 700px) {
-  .cards {
+  html {
+    font-size: 16px;
+  }
+  header {
+    padding: 1.2rem 0.5rem 0.8rem 0.5rem;
+    border-bottom-left-radius: 18px;
+    border-bottom-right-radius: 18px;
+  }
+  .visuals-row {
     flex-direction: column;
     gap: 0.5rem;
   }
+  .visual-card {
+    min-width: 0;
+    max-width: 100vw;
+    padding: 1rem 0.7rem;
+  }
   .alt-grid {
     grid-template-columns: 1fr;
+    padding: 0.7rem;
+  }
+  .alt-grid div {
+    font-size: 1em;
+    padding: 0.7em 0.5em;
   }
   main {
-    padding: 0.5rem;
+    padding: 0.3rem;
   }
+  .info-block {
+    padding: 1em 0.7em;
+    font-size: 1em;
+  }
+  #tipsList li {
+    font-size: 1em;
+    padding: 0.7em 0.7em;
+  }
+  #quizBtn, #showValueBtn, #randomTipBtn {
+    font-size: 1em;
+    padding: 0.7em 1em;
+    border-radius: 14px;
+  }
+  .quiz-guide {
+    padding: 0.7rem;
+    border-radius: 12px;
+  }
+  #productGuideModal > div {
+    max-width: 95vw !important;
+    padding: 1.2em 0.7em !important;
+  }
+}
+#productGuideModal {
+  align-items: flex-end !important;
 }
