@@ -1,4 +1,3 @@
-
 * {
   margin: 0;
   padding: 0;
@@ -320,19 +319,40 @@ body {
 
 .service-comparison-header {
   display: flex;
+  flex-direction: row;
+  justify-content: center;
   align-items: center;
-  justify-content: space-between;
-  margin-bottom: var(--space-lg);
-  padding: var(--space-md);
+  gap: 1.5rem;
+  padding: 1.5rem 0.5rem;
   background: var(--light-gray);
   border-radius: var(--radius-md);
+  border: 1px solid var(--border-gray);
 }
 
 .google-service, .alternative-service {
+  flex: 0 0 auto;
   display: flex;
   align-items: center;
-  gap: var(--space-sm);
-  flex: 1;
+  justify-content: center;
+}
+
+.vs-arrow {
+  flex: 0 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 0.5rem;
+}
+
+.service-icon {
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: var(--radius-md);
+  background: white;
+  box-shadow: var(--shadow-sm);
 }
 
 .google-service {
@@ -393,6 +413,13 @@ body {
 
 .service-icon {
   flex-shrink: 0;
+  width: 64px;
+  height: 64px;
+  border-radius: var(--radius-md);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px;
 }
 
 .service-details h3 {
@@ -663,59 +690,93 @@ body {
   }
   
   .service-comparison-header {
-    flex-direction: column;
-    gap: var(--space-md);
+    display: flex;
+    flex-direction: row !important;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    gap: 0.25rem;
     text-align: center;
+    padding: 0.5rem 0.25rem;
+    box-sizing: border-box;
+    overflow-x: hidden;
   }
   
   .google-service, .alternative-service {
+    flex: 1 1 0;
+    min-width: 0;
+    max-width: 33%;
     justify-content: center;
+    align-items: center;
     text-align: center;
+    word-break: break-word;
+    padding: 0 0.1rem;
   }
   
   .vs-arrow {
-    transform: rotate(90deg);
-    padding: var(--space-sm) 0;
+    flex: 0 0 32px;
+    min-width: 32px;
+    max-width: 40px;
+    transform: none !important;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    font-size: 1rem;
+  }
+  
+  .service-icon {
+    margin: 0 auto 0.15rem auto;
+    width: 32px;
+    height: 32px;
+    padding: 1px;
+  }
+  
+  .service-icon svg {
+    width: 24px;
+    height: 24px;
+  }
+  
+  .service-details {
+    text-align: center;
+    font-size: 0.85rem;
+    word-break: break-word;
+  }
+  
+  .service-details h3, .service-details h4 {
+    font-size: 0.95rem;
+    margin: 0.1rem 0;
+  }
+  
+  .service-category, .service-problems {
+    font-size: 0.75rem;
   }
   
   .trust-indicators {
+    gap: 0.15rem;
+    margin-top: 0.3rem;
+    flex-wrap: wrap;
     justify-content: center;
   }
   
-  .footer-content {
-    grid-template-columns: 1fr;
-    gap: var(--space-lg);
-  }
-  
-  .footer-links {
-    flex-direction: column;
-    gap: var(--space-lg);
+  .indicator {
+    font-size: 0.6rem;
+    padding: 0.1rem 0.3rem;
   }
 }
 
-@media (max-width: 480px) {
-  .hero {
-    padding: var(--space-lg) 0;
+@media (max-width: 400px) {
+  .service-comparison-header {
+    gap: 0.5rem;
+    padding: 0.5rem 0.05rem;
   }
-  
-  .hero-title {
-    font-size: 1.75rem;
+  .service-icon {
+    width: 28px;
+    height: 28px;
   }
-  
-  .data-flow {
-    flex-direction: column;
-    gap: var(--space-sm);
-  }
-  
-  .arrow {
-    transform: rotate(90deg);
-  }
-  
-  .service-info {
-    padding: var(--space-md);
-  }
-  
-  .alternatives-list {
-    gap: var(--space-lg);
+  .vs-arrow svg {
+    width: 18px;
+    height: 18px;
   }
 }
